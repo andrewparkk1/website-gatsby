@@ -1,5 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import Button from '@mui/material/Button';
+
 
 const pageStyles = {
   color: "#232129",
@@ -139,6 +141,7 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
+      <Button variant="contained">Hello World</Button>
       <h1 className="text-3xl font-bold underline text-red-700">
         Hello world!
       </h1>
